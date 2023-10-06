@@ -3,7 +3,7 @@ import json
 
 # Parameters
 PathToEnvironmentJSON = "example-env.json"
-EntityToDownload = "systemusers"
+EntityToDownload = "contacts"
 
 # Getting access token.
 authentication = authenticate_with_msal.getAuthenticatedSession(PathToEnvironmentJSON)
@@ -11,7 +11,7 @@ session = authentication[0]
 environmentURI = authentication[1]
 
 # an example download request to the URI
-request_uri = f'{environmentURI}api/data/v9.2/{EntityToDownload}?$top=10&$select=firstname,lastname,internalemailaddress'
+request_uri = f'{environmentURI}api/data/v9.2/{EntityToDownload}?$top=10&$select=firstname,lastname,emailaddress1,birthdate'
 
 r = session.get(request_uri)
 

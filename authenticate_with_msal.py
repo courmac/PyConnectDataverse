@@ -1,5 +1,5 @@
 import msal
-import requests 
+import requests
 import json
 import logging
 

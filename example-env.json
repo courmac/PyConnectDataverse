@@ -1,7 +1,7 @@
-{ 
-    "clientID": "<CLIENT OR APP ID>",
-    "tenantID": "<MICROSOFT TENANT ID>",
-    "environmentURI": "https://<BASE DYNAMICS INSTANCE URL>/",
+{
+    "clientID": "b1ee3468-488c-4147-a3b0-37329e3f001c",
+    "tenantID": "0403a53a-bdd9-4465-821e-3e3c1f114e31",
+    "environmentURI": "https://greymatter-vanilla.crm.dynamics.com/",
     "authorityBase": "https://login.microsoftonline.com/",
     "scopeSuffix": "user_impersonation"
 }

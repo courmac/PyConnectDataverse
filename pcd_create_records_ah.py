@@ -7,15 +7,14 @@ from requests import Request, Session
 # Parameters
 PathToEnvironmentJSON = "example-env.json"
 EntityBeingAddedTo = "contacts"
-PathToCSVOfRecords = "data/pcd_create_records.csv"
+PathToCSVOfRecords = "data/pcd_create_records_ah.csv"
 AttributesToReturn = "?$select=lastname" # optionally include the attributes to return, otherwise all are returned
 
 # The Pandas data types of the columns imported to avoid import issues
 dtypes = {
-    #"parentcustomerid_account@odata.bind": "object",
+    "parentcustomerid_account@odata.bind": "object",
     "lastname": "object",
-    "firstname": "object",
-    #"emailaddress1": "object",
+    "firstname": "object"
 }
 
 # read the CSV and convert to dataframe
